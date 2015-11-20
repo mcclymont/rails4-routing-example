@@ -23,5 +23,8 @@ module Example
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    #
+    schema_path = File.join(Rails.root, 'docs', 'schema.json')
+    config.middleware.use Committee::Middleware::ResponseValidation, schema: JSON.parse(File.read(schema_path))
   end
 end
