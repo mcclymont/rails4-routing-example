@@ -137,8 +137,8 @@
         "app": {
           "description": "the app this user belongs to",
           "type": [
-            "object",
-            "null"
+            "null",
+            "object"
           ],
           "$ref": "#/definitions/app"
         },

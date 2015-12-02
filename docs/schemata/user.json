@@ -35,7 +35,7 @@
     },
     "app": {
       "description": "the app this user belongs to",
-      "type": ["object", "null"],
+      "type": ["null", "object"],
       "$ref": "/schemata/app#"
     },
     "created_at": {
